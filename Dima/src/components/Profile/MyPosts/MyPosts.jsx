@@ -2,13 +2,20 @@ import React from 'react';
 import s from './MyPosts.module.css';
 import MyPost from './Post/MyPost';
 
-const MyPosts = () => {
+const MyPosts = (props) => {
+    let postsElements = props.posts.map(p => <MyPost like={p.like} message={p.message} />);
+
     return (
-        <div>
-            my posts
+        <div className={s.postsBlock}>
+            <h3>My posts</h3>
+            <div>
+                <textarea></textarea>
+            </div>
+            <div>
+                <button>Add Post</button>
+            </div>
             <div className={s.posts}>
-                <MyPost like="15" message='Hi, fuck you!!!' />
-                <MyPost like="30" message='Hi, fuck you too!!! Motherfucker!!!' />
+                {postsElements}
             </div>
         </div >
     )

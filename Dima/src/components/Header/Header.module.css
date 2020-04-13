@@ -1,8 +1,18 @@
 .header{
 	grid-area: h;
-	background-color: rgb(5, 105, 180);
+	background-color: rgb(48, 65, 89);
+}
+
+.logo{
+	float: left;
 }
 
 .header img{
 	width: 60px;
+}
+
+.title{
+	margin-left: 10%;
+	margin-top: 1%;
+	color: white;
 }
