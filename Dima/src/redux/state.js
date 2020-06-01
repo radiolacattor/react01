@@ -20,6 +20,14 @@ let state = {
             {id: 2, msg: 'How are your miay?'},
             {id: 3, msg: 'Thx, very myr!'}
         ]
+    },
+
+    sidebar: {
+        usersOnline: [
+            {id: 1, name: 'Dima'},
+            {id: 2, name: 'Ajnura'},
+            {id: 3, name: 'Kirill'}
+        ]
     }
 
 }
