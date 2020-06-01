@@ -29,7 +29,11 @@ const App = (props) => {
                     <Route path='/music' render={ () => <Music /> } />
                     <Route path='/settings' render={ () => <Settings /> } />
                 </div>
+<<<<<<< HEAD
                 <Sidebar state={props.state.sidebar} />
+=======
+                <Sidebar />
+>>>>>>> 04d36e0a8e06ab2bbd258aacbe8ca957c02a267d
             </div>
         </BrowserRouter>
     );
