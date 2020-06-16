@@ -2,8 +2,6 @@ let rerenderEntireTree = () => {
     alert('hui');
 }
 
-let tr = 'fix';
-
 let state = {
 
     profilePage: {
