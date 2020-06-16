@@ -38,7 +38,11 @@ let state = {
 
 }
 
+<<<<<<< HEAD
 export const addPost = () => {
+=======
+export let addPost = () => {
+>>>>>>> 71f85f961fb779909469f0f56bce079708b7dc9e
     let newPost = {
         id: 3,
         like: 0,
@@ -46,6 +50,7 @@ export const addPost = () => {
     };
     state.profilePage.posts.push(newPost);
     state.profilePage.newPostText = '';
+<<<<<<< HEAD
     rerenderEntireTree(state);
 }
 
@@ -75,3 +80,30 @@ export const subscribe = (observer) => {
 
 export default state;
 
+=======
+    rerenderEntireTree(state);
+}
+
+export let updateNewPostText = (newText) => {
+    state.profilePage.newPostText = newText;
+    rerenderEntireTree(state);
+}
+
+export let addMessage = () => {
+    let newMessage = {
+        id: 4,
+        msg: state.dialogsPage.newMessageText
+    };
+    state.dialogsPage.messages.push(newMessage);
+    state.dialogsPage.newMessageText = '';
+    rerenderEntireTree(state);
+}
+
+export let updateNewMessageText = (newText) => {
+    state.dialogsPage.newMessageText = newText;
+    rerenderEntireTree(state);
+}
+
+
+export default state;
+>>>>>>> 71f85f961fb779909469f0f56bce079708b7dc9e
