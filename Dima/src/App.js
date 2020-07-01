@@ -10,6 +10,7 @@ import Music from './components/Music/Music';
 import Settings from './components/Settings/Settings';
 import Sidebar from './components/Sidebar/Sidebar'
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
+import SidebarContainer from "./components/Sidebar/SidebarContainer";
 
 
 const App = (props) => {
@@ -20,16 +21,14 @@ const App = (props) => {
             <NavBar/>
             <div className="app-wrapper-content">
                 <Route path='/profile'
-                       render={() => <Profile
-                           store={props.store} />}/>
+                       render={() => <Profile/>}/>
                 <Route path='/dialogs'
-                       render={() => <DialogsContainer
-                           store={props.store} />}/>
+                       render={() => <DialogsContainer/>}/>
                 <Route path='/news' render={() => <News/>}/>
                 <Route path='/music' render={() => <Music/>}/>
                 <Route path='/settings' render={() => <Settings/>}/>
             </div>
-            <Sidebar state={props.state.sidebar}/>
+            <SidebarContainer/>
         </div>
     );
 }
