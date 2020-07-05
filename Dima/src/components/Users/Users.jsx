@@ -1,14 +1,14 @@
 import React from "react";
 import s from './Users.module.css';
 import * as axios from 'axios';
+import userPhoto from '../../accets/img/ava.png'
 
 const Users = (props) => {
     if (props.users.length === 0) {
-
         axios
-            .get("https://agrokredit.keenetic.pro/users.php").then(response => {
+            .get("https://social-network.samuraijs.com/api/1.0/users").then(response => {
             debugger
-            props.setUsers()
+            props.setUsers(response.data.items)
         })
     }
 
@@ -18,7 +18,7 @@ const Users = (props) => {
                 props.users.map(u => <div key={u.id}>
                     <span>
                         <div>
-                            <img src={u.avatarURL} className={s.usrsAvatar}/>
+                            <img src={u.photos.small != null ? u.photos.small : userPhoto} className={s.usrsAvatar}/>
                         </div>
                         <div>
                             {u.followed
@@ -33,7 +33,7 @@ const Users = (props) => {
                     <span>
                         <span>
                             <div>
-                                {u.fullName}
+                                {u.name}
                             </div>
                             <div>
                                 {u.status}
@@ -41,10 +41,10 @@ const Users = (props) => {
                         </span>
                         <span>
                             <div>
-                                {u.location.country}
+                                {"u.location.country"}
                             </div>
                             <div>
-                                {u.location.city}
+                                {"u.location.city"}
                             </div>
                         </span>
                     </span>
