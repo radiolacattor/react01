@@ -3,37 +3,38 @@ import s from './Users.module.css';
 import * as axios from 'axios';
 import userPhoto from '../../accets/img/ava.png'
 
-const Users = (props) => {
-    if (props.users.length === 0) {
+class Users extends React.Component {
+    componentDidMount() {
         axios
-            .get("https://home.radiolacattor.ru/test.php").then(response => {
+            .get("https://home.radiolacattor.ru/users.php").then(response => {
             debugger
-            props.setUsers(response.data)
+            this.props.setUsers(response.data.items)
         })
     }
 
-    return (
-        <div>
-            {
-                props.users.map(u => <div key={u.id}>
+    render() {
+        return (
+            <div>
+                {
+                    this.props.users.map(u => <div key={u.id}>
                     <span>
                         <div>
-                            <img src={u.avatarURL != null ? u.avatarURL : userPhoto} className={s.usrsAvatar}/>
+                            <img src={u.uniqueUrlName != null ? u.uniqueUrlName : userPhoto} className={s.usrsAvatar}/>
                         </div>
                         <div>
                             {u.followed
                                 ? <button onClick={() => {
-                                    props.unfollow(u.id)
+                                    this.props.unfollow(u.id)
                                 }}>Unfollow</button>
                                 : <button onClick={() => {
-                                    props.follow(u.id)
+                                    this.props.follow(u.id)
                                 }}>Follow</button>}
                         </div>
                     </span>
-                    <span>
+                        <span>
                         <span>
                             <div>
-                                {u.fullName}
+                                {u.name}
                             </div>
                             <div>
                                 {u.status}
@@ -41,18 +42,19 @@ const Users = (props) => {
                         </span>
                         <span>
                             <div>
-                                {u.loca.location}
+                                {u.photos.small}
                             </div>
                             <div>
-                                {u.loca.country}
+                                {u.photos.large}
                             </div>
                         </span>
-                       
+
                     </span>
-                </div>)
-            }
-        </div>
-    )
+                    </div>)
+                }
+            </div>
+        )
+    }
 }
 
-export default Users;
+export default Users
