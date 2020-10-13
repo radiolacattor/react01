@@ -22,7 +22,9 @@
     <list default="true" id="1c66ccff-c86c-4933-87e9-0a8c212a5528" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/usersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/usersReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +122,8 @@
       <workItem from="1593878856286" duration="14286000" />
       <workItem from="1593954057111" duration="6416000" />
       <workItem from="1593970574208" duration="1973000" />
-      <workItem from="1602497001618" duration="8119000" />
+      <workItem from="1602497001618" duration="8720000" />
+      <workItem from="1602572786171" duration="9101000" />
     </task>
     <servers />
   </component>
@@ -155,7 +158,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/node_modules/@types/react/index.d.ts</url>
           <line>461</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
