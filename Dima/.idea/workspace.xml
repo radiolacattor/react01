@@ -22,8 +22,6 @@
     <list default="true" id="1c66ccff-c86c-4933-87e9-0a8c212a5528" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/usersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/usersReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,6 +122,9 @@
       <workItem from="1593970574208" duration="1973000" />
       <workItem from="1602497001618" duration="8720000" />
       <workItem from="1602572786171" duration="9101000" />
+      <workItem from="1603104127762" duration="60000" />
+      <workItem from="1603182409325" duration="2630000" />
+      <workItem from="1603280244777" duration="338000" />
     </task>
     <servers />
   </component>
